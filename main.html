@@ -37,19 +37,24 @@
 
   <!-- Ordered List of Media Items -->
   <ol>
+    <!-- Image Item -->
     <li>
       <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum">
     </li>
+
+    <!-- Video Item with <source> -->
     <li>
-      <video 
-        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
-        width="320" height="240" controls>
+      <video width="320" height="240" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
     </li>
+
+    <!-- Audio Item with <source> -->
     <li>
-      <audio 
-        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
-        controls>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
       </audio>
     </li>
   </ol>
